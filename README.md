@@ -1,5 +1,4 @@
-# demo
-学生选课系统  
+# 学生选课系统  
 Bilibili教程:  
 https://www.bilibili.com/video/BV1zJ411k7cQ/?p=1  
 数据库使用的是Access，与视频中MySQL大同小异，只是类名不同  
