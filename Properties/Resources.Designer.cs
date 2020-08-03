@@ -63,6 +63,16 @@ namespace demo.Properties {
         /// <summary>
         ///   查找 System.Drawing.Bitmap 类型的本地化资源。
         /// </summary>
+        internal static System.Drawing.Bitmap _20200219191239 {
+            get {
+                object obj = ResourceManager.GetObject("20200219191239", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查找 System.Drawing.Bitmap 类型的本地化资源。
+        /// </summary>
         internal static System.Drawing.Bitmap crazing_41 {
             get {
                 object obj = ResourceManager.GetObject("crazing_41", resourceCulture);
