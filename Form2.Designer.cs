@@ -72,7 +72,7 @@
             this.信息管理ToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(800, 36);
+            this.menuStrip1.Size = new System.Drawing.Size(800, 32);
             this.menuStrip1.TabIndex = 4;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -81,7 +81,7 @@
             this.系统ToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.退出ToolStripMenuItem});
             this.系统ToolStripMenuItem.Name = "系统ToolStripMenuItem";
-            this.系统ToolStripMenuItem.Size = new System.Drawing.Size(62, 32);
+            this.系统ToolStripMenuItem.Size = new System.Drawing.Size(62, 28);
             this.系统ToolStripMenuItem.Text = "系统";
             // 
             // 退出ToolStripMenuItem
@@ -98,7 +98,7 @@
             this.修改学生信息ToolStripMenuItem,
             this.删除学生信息ToolStripMenuItem});
             this.信息管理ToolStripMenuItem.Name = "信息管理ToolStripMenuItem";
-            this.信息管理ToolStripMenuItem.Size = new System.Drawing.Size(98, 32);
+            this.信息管理ToolStripMenuItem.Size = new System.Drawing.Size(98, 28);
             this.信息管理ToolStripMenuItem.Text = "信息管理";
             // 
             // 添加学生信息ToolStripMenuItem
@@ -147,6 +147,8 @@
             this.toolStripStatusLabel2.Name = "toolStripStatusLabel2";
             this.toolStripStatusLabel2.Size = new System.Drawing.Size(564, 24);
             this.toolStripStatusLabel2.Spring = true;
+            this.toolStripStatusLabel2.Text = " ";
+            this.toolStripStatusLabel2.Click += new System.EventHandler(this.toolStripStatusLabel2_Click);
             // 
             // toolStripStatusLabel3
             // 
@@ -173,9 +175,9 @@
             this.toolStripButton2,
             this.toolStripButton3,
             this.flash});
-            this.toolStrip1.Location = new System.Drawing.Point(0, 36);
+            this.toolStrip1.Location = new System.Drawing.Point(0, 32);
             this.toolStrip1.Name = "toolStrip1";
-            this.toolStrip1.Size = new System.Drawing.Size(800, 38);
+            this.toolStrip1.Size = new System.Drawing.Size(800, 33);
             this.toolStrip1.TabIndex = 8;
             this.toolStrip1.Text = "toolStrip1";
             // 
@@ -185,7 +187,7 @@
             this.toolStripButton1.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton1.Image")));
             this.toolStripButton1.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolStripButton1.Name = "toolStripButton1";
-            this.toolStripButton1.Size = new System.Drawing.Size(34, 33);
+            this.toolStripButton1.Size = new System.Drawing.Size(34, 28);
             this.toolStripButton1.Text = "toolStripButton1";
             this.toolStripButton1.ToolTipText = "添加信息";
             this.toolStripButton1.Click += new System.EventHandler(this.添加学生信息ToolStripMenuItem_Click);
@@ -196,7 +198,7 @@
             this.toolStripButton2.Image = global::demo.Properties.Resources.crazing_41;
             this.toolStripButton2.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolStripButton2.Name = "toolStripButton2";
-            this.toolStripButton2.Size = new System.Drawing.Size(34, 33);
+            this.toolStripButton2.Size = new System.Drawing.Size(34, 28);
             this.toolStripButton2.Text = "toolStripButton2";
             this.toolStripButton2.ToolTipText = "删除信息";
             this.toolStripButton2.Click += new System.EventHandler(this.删除学生信息ToolStripMenuItem_Click);
@@ -207,7 +209,7 @@
             this.toolStripButton3.Image = global::demo.Properties.Resources.crazing_43;
             this.toolStripButton3.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolStripButton3.Name = "toolStripButton3";
-            this.toolStripButton3.Size = new System.Drawing.Size(34, 33);
+            this.toolStripButton3.Size = new System.Drawing.Size(34, 28);
             this.toolStripButton3.Text = "啦啦啦";
             this.toolStripButton3.ToolTipText = "修改信息";
             this.toolStripButton3.Click += new System.EventHandler(this.修改学生信息ToolStripMenuItem_Click);
@@ -218,7 +220,7 @@
             this.flash.Image = ((System.Drawing.Image)(resources.GetObject("flash.Image")));
             this.flash.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.flash.Name = "flash";
-            this.flash.Size = new System.Drawing.Size(34, 33);
+            this.flash.Size = new System.Drawing.Size(34, 28);
             this.flash.ToolTipText = "刷新";
             this.flash.Click += new System.EventHandler(this.flash_Click);
             // 
@@ -254,7 +256,7 @@
             dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.dataGridView1.DefaultCellStyle = dataGridViewCellStyle2;
             this.dataGridView1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dataGridView1.Location = new System.Drawing.Point(0, 74);
+            this.dataGridView1.Location = new System.Drawing.Point(0, 65);
             this.dataGridView1.Name = "dataGridView1";
             dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Control;
@@ -267,7 +269,7 @@
             this.dataGridView1.RowHeadersWidth = 62;
             this.dataGridView1.RowTemplate.Height = 30;
             this.dataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dataGridView1.Size = new System.Drawing.Size(800, 345);
+            this.dataGridView1.Size = new System.Drawing.Size(800, 354);
             this.dataGridView1.TabIndex = 9;
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 

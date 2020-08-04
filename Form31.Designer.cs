@@ -56,12 +56,15 @@
             this.取消这门课ToolStripMenuItem.Name = "取消这门课ToolStripMenuItem";
             this.取消这门课ToolStripMenuItem.Size = new System.Drawing.Size(116, 28);
             this.取消这门课ToolStripMenuItem.Text = "取消这门课";
+            this.取消这门课ToolStripMenuItem.Click += new System.EventHandler(this.取消这门课ToolStripMenuItem_Click);
             // 
             // dataGridView1
             // 
             this.dataGridView1.AllowDrop = true;
+            this.dataGridView1.AllowUserToAddRows = false;
             this.dataGridView1.AllowUserToDeleteRows = false;
-            this.dataGridView1.AllowUserToOrderColumns = true;
+            this.dataGridView1.AllowUserToResizeColumns = false;
+            this.dataGridView1.AllowUserToResizeRows = false;
             this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
@@ -71,9 +74,12 @@
             this.Column4});
             this.dataGridView1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dataGridView1.Location = new System.Drawing.Point(0, 32);
+            this.dataGridView1.MultiSelect = false;
             this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.RowHeadersVisible = false;
             this.dataGridView1.RowHeadersWidth = 62;
             this.dataGridView1.RowTemplate.Height = 30;
+            this.dataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dataGridView1.Size = new System.Drawing.Size(800, 418);
             this.dataGridView1.TabIndex = 4;
             // 
@@ -110,6 +116,7 @@
             this.Controls.Add(this.menuStrip1);
             this.Name = "Form31";
             this.Text = "我的选课";
+            this.Load += new System.EventHandler(this.Form31_Load);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();

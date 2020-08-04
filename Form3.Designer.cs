@@ -46,8 +46,8 @@
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.menuStrip1.SuspendLayout();
             this.statusStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
@@ -63,35 +63,36 @@
             this.我的课程ToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(800, 32);
+            this.menuStrip1.Size = new System.Drawing.Size(800, 36);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             // 
             // 系统ToolStripMenuItem
             // 
             this.系统ToolStripMenuItem.Name = "系统ToolStripMenuItem";
-            this.系统ToolStripMenuItem.Size = new System.Drawing.Size(62, 28);
+            this.系统ToolStripMenuItem.Size = new System.Drawing.Size(62, 30);
             this.系统ToolStripMenuItem.Text = "系统";
             // 
             // 选课ToolStripMenuItem
             // 
             this.选课ToolStripMenuItem.Name = "选课ToolStripMenuItem";
-            this.选课ToolStripMenuItem.Size = new System.Drawing.Size(98, 28);
+            this.选课ToolStripMenuItem.Size = new System.Drawing.Size(98, 30);
             this.选课ToolStripMenuItem.Text = "选择该课";
             this.选课ToolStripMenuItem.Click += new System.EventHandler(this.选课ToolStripMenuItem_Click);
             // 
             // 我的课程ToolStripMenuItem
             // 
             this.我的课程ToolStripMenuItem.Name = "我的课程ToolStripMenuItem";
-            this.我的课程ToolStripMenuItem.Size = new System.Drawing.Size(98, 28);
+            this.我的课程ToolStripMenuItem.Size = new System.Drawing.Size(98, 30);
             this.我的课程ToolStripMenuItem.Text = "我的课程";
+            this.我的课程ToolStripMenuItem.Click += new System.EventHandler(this.我的课程ToolStripMenuItem_Click);
             // 
             // toolStrip1
             // 
             this.toolStrip1.ImageScalingSize = new System.Drawing.Size(24, 24);
-            this.toolStrip1.Location = new System.Drawing.Point(0, 32);
+            this.toolStrip1.Location = new System.Drawing.Point(0, 36);
             this.toolStrip1.Name = "toolStrip1";
-            this.toolStrip1.Size = new System.Drawing.Size(800, 25);
+            this.toolStrip1.Size = new System.Drawing.Size(800, 38);
             this.toolStrip1.TabIndex = 1;
             this.toolStrip1.Text = "toolStrip1";
             // 
@@ -112,15 +113,14 @@
             // toolStripStatusLabel1
             // 
             this.toolStripStatusLabel1.Name = "toolStripStatusLabel1";
-            this.toolStripStatusLabel1.Size = new System.Drawing.Size(208, 24);
-            this.toolStripStatusLabel1.Text = "欢迎使用学生选课系统！";
+            this.toolStripStatusLabel1.Size = new System.Drawing.Size(154, 24);
+            this.toolStripStatusLabel1.Text = "欢迎登陆选课系统";
             // 
             // toolStripStatusLabel2
             // 
             this.toolStripStatusLabel2.Name = "toolStripStatusLabel2";
-            this.toolStripStatusLabel2.Size = new System.Drawing.Size(510, 24);
+            this.toolStripStatusLabel2.Size = new System.Drawing.Size(564, 24);
             this.toolStripStatusLabel2.Spring = true;
-            this.toolStripStatusLabel2.Text = "toolStripStatusLabel2";
             // 
             // toolStripStatusLabel3
             // 
@@ -141,6 +141,7 @@
             // dataGridView1
             // 
             this.dataGridView1.AllowDrop = true;
+            this.dataGridView1.AllowUserToAddRows = false;
             this.dataGridView1.AllowUserToDeleteRows = false;
             this.dataGridView1.AllowUserToOrderColumns = true;
             this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
@@ -156,8 +157,8 @@
             this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Column1,
             this.Column2,
-            this.Column3,
-            this.Column4});
+            this.Column4,
+            this.Column3});
             dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
             dataGridViewCellStyle2.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
@@ -167,7 +168,8 @@
             dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.dataGridView1.DefaultCellStyle = dataGridViewCellStyle2;
             this.dataGridView1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dataGridView1.Location = new System.Drawing.Point(0, 57);
+            this.dataGridView1.Location = new System.Drawing.Point(0, 74);
+            this.dataGridView1.MultiSelect = false;
             this.dataGridView1.Name = "dataGridView1";
             dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Control;
@@ -177,10 +179,13 @@
             dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
             this.dataGridView1.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
+            this.dataGridView1.RowHeadersVisible = false;
             this.dataGridView1.RowHeadersWidth = 62;
             this.dataGridView1.RowTemplate.Height = 30;
-            this.dataGridView1.Size = new System.Drawing.Size(800, 362);
+            this.dataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dataGridView1.Size = new System.Drawing.Size(800, 345);
             this.dataGridView1.TabIndex = 3;
+            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
             // Column1
             // 
@@ -194,17 +199,17 @@
             this.Column2.MinimumWidth = 8;
             this.Column2.Name = "Column2";
             // 
-            // Column3
-            // 
-            this.Column3.HeaderText = "课程学分";
-            this.Column3.MinimumWidth = 8;
-            this.Column3.Name = "Column3";
-            // 
             // Column4
             // 
             this.Column4.HeaderText = "授课老师";
             this.Column4.MinimumWidth = 8;
             this.Column4.Name = "Column4";
+            // 
+            // Column3
+            // 
+            this.Column3.HeaderText = "课程学分";
+            this.Column3.MinimumWidth = 8;
+            this.Column3.Name = "Column3";
             // 
             // Form3
             // 
@@ -219,6 +224,7 @@
             this.Name = "Form3";
             this.Text = "学生选课";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.Form3_FormClosed);
+            this.Load += new System.EventHandler(this.Form3_Load);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.statusStrip1.ResumeLayout(false);
@@ -245,7 +251,7 @@
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column4;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
     }
 }
