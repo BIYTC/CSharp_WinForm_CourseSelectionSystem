@@ -83,12 +83,14 @@ namespace demo
             }
             else
             {
+                Dao dao = new Dao();
+                dao.Connect();
                 if (str[0]!=textBox1.Text)
                 {
                     string sql = string.Format("update 学生表 set SID='{0}' where SID = '{1}' and Name ='{2}'",textBox1.Text,str[0],str[1]);
                     //MessageBox.Show(sql);
-                    Dao dao = new Dao();
-                    dao.Connect();
+                    //Dao dao = new Dao();
+                    //dao.Connect();
                     if (dao.AppendData(sql))
                     {
                         MessageBox.Show("SID修改成功！");
@@ -103,8 +105,8 @@ namespace demo
                 {
                     string sql = string.Format("update 学生表 set Name='{0}' where SID = '{1}' and Name ='{2}'", textBox2.Text, str[0], str[1]);
                     //MessageBox.Show(sql);
-                    Dao dao = new Dao();
-                    dao.Connect();
+                    //Dao dao = new Dao();
+                    //dao.Connect();
                     if (dao.AppendData(sql))
                     {
                         MessageBox.Show("Name修改成功！");
@@ -119,8 +121,8 @@ namespace demo
                 {
                     string sql = string.Format("update 学生表 set Class='{0}' where SID = '{1}' and Name ='{2}'", textBox3.Text, str[0], str[1]);
                     //MessageBox.Show(sql);
-                    Dao dao = new Dao();
-                    dao.Connect();
+                    //Dao dao = new Dao();
+                    //dao.Connect();
                     if (dao.AppendData(sql))
                     {
                         MessageBox.Show("Class修改成功！");
@@ -134,9 +136,9 @@ namespace demo
                 if (str[3] != textBox4.Text)
                 {
                     string sql = string.Format("update 学生表 set Birthday='{0}' where SID = '{1}' and Name ='{2}'", textBox4.Text, str[0], str[1]);
-                    //MessageBox.Show(sql);
-                    Dao dao = new Dao();
-                    dao.Connect();
+                    ////MessageBox.Show(sql);
+                    //Dao dao = new Dao();
+                    //dao.Connect();
                     if (dao.AppendData(sql))
                     {
                         MessageBox.Show("Birthday修改成功！");
@@ -151,8 +153,8 @@ namespace demo
                 {
                     string sql = string.Format("update 学生表 set 籍贯='{0}' where SID = '{1}' and Name ='{2}'", textBox5.Text, str[0], str[1]);
                     //MessageBox.Show(sql);
-                    Dao dao = new Dao();
-                    dao.Connect();
+                    //Dao dao = new Dao();
+                    //dao.Connect();
                     if (dao.AppendData(sql))
                     {
                         MessageBox.Show("籍贯修改成功！");

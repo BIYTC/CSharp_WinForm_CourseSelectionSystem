@@ -93,5 +93,10 @@ namespace demo
             Form31 f = new Form31(SID);
             f.Show();
         }
+
+        private void 退出ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }

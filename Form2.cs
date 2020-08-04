@@ -103,10 +103,5 @@ namespace demo
         {
             Application.Exit();//结束整个程序
         }
-
-        private void toolStripStatusLabel2_Click(object sender, EventArgs e)
-        {
-
-        }
     }
 }

@@ -37,13 +37,14 @@
             this.系统ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.退出ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.信息管理ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.添加学生信息ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.修改学生信息ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.删除学生信息ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.添加教师信息 = new System.Windows.Forms.ToolStripMenuItem();
+            this.修改教师信息 = new System.Windows.Forms.ToolStripMenuItem();
+            this.删除教师信息 = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStrip1 = new System.Windows.Forms.ToolStrip();
             this.toolStripButton1 = new System.Windows.Forms.ToolStripButton();
             this.toolStripButton2 = new System.Windows.Forms.ToolStripButton();
             this.toolStripButton3 = new System.Windows.Forms.ToolStripButton();
+            this.刷新 = new System.Windows.Forms.ToolStripButton();
             this.statusStrip1 = new System.Windows.Forms.StatusStrip();
             this.toolStripStatusLabel1 = new System.Windows.Forms.ToolStripStatusLabel();
             this.toolStripStatusLabel2 = new System.Windows.Forms.ToolStripStatusLabel();
@@ -85,36 +86,40 @@
             // 退出ToolStripMenuItem
             // 
             this.退出ToolStripMenuItem.Name = "退出ToolStripMenuItem";
-            this.退出ToolStripMenuItem.Size = new System.Drawing.Size(146, 34);
+            this.退出ToolStripMenuItem.Size = new System.Drawing.Size(270, 34);
             this.退出ToolStripMenuItem.Text = "退出";
+            this.退出ToolStripMenuItem.Click += new System.EventHandler(this.退出ToolStripMenuItem_Click);
             // 
             // 信息管理ToolStripMenuItem
             // 
             this.信息管理ToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.添加学生信息ToolStripMenuItem,
-            this.修改学生信息ToolStripMenuItem,
-            this.删除学生信息ToolStripMenuItem});
+            this.添加教师信息,
+            this.修改教师信息,
+            this.删除教师信息});
             this.信息管理ToolStripMenuItem.Name = "信息管理ToolStripMenuItem";
             this.信息管理ToolStripMenuItem.Size = new System.Drawing.Size(98, 28);
             this.信息管理ToolStripMenuItem.Text = "信息管理";
             // 
-            // 添加学生信息ToolStripMenuItem
+            // 添加教师信息
             // 
-            this.添加学生信息ToolStripMenuItem.Name = "添加学生信息ToolStripMenuItem";
-            this.添加学生信息ToolStripMenuItem.Size = new System.Drawing.Size(218, 34);
-            this.添加学生信息ToolStripMenuItem.Text = "添加教师信息";
+            this.添加教师信息.Name = "添加教师信息";
+            this.添加教师信息.Size = new System.Drawing.Size(218, 34);
+            this.添加教师信息.Text = "添加教师信息";
+            this.添加教师信息.Click += new System.EventHandler(this.添加教师信息_Click);
             // 
-            // 修改学生信息ToolStripMenuItem
+            // 修改教师信息
             // 
-            this.修改学生信息ToolStripMenuItem.Name = "修改学生信息ToolStripMenuItem";
-            this.修改学生信息ToolStripMenuItem.Size = new System.Drawing.Size(218, 34);
-            this.修改学生信息ToolStripMenuItem.Text = "修改教师信息";
+            this.修改教师信息.Name = "修改教师信息";
+            this.修改教师信息.Size = new System.Drawing.Size(218, 34);
+            this.修改教师信息.Text = "修改教师信息";
+            this.修改教师信息.Click += new System.EventHandler(this.修改教师信息_Click);
             // 
-            // 删除学生信息ToolStripMenuItem
+            // 删除教师信息
             // 
-            this.删除学生信息ToolStripMenuItem.Name = "删除学生信息ToolStripMenuItem";
-            this.删除学生信息ToolStripMenuItem.Size = new System.Drawing.Size(218, 34);
-            this.删除学生信息ToolStripMenuItem.Text = "删除教师信息";
+            this.删除教师信息.Name = "删除教师信息";
+            this.删除教师信息.Size = new System.Drawing.Size(218, 34);
+            this.删除教师信息.Text = "删除教师信息";
+            this.删除教师信息.Click += new System.EventHandler(this.删除教师信息_Click);
             // 
             // toolStrip1
             // 
@@ -122,7 +127,8 @@
             this.toolStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.toolStripButton1,
             this.toolStripButton2,
-            this.toolStripButton3});
+            this.toolStripButton3,
+            this.刷新});
             this.toolStrip1.Location = new System.Drawing.Point(0, 32);
             this.toolStrip1.Name = "toolStrip1";
             this.toolStrip1.Size = new System.Drawing.Size(827, 33);
@@ -138,6 +144,7 @@
             this.toolStripButton1.Size = new System.Drawing.Size(34, 28);
             this.toolStripButton1.Text = "toolStripButton1";
             this.toolStripButton1.ToolTipText = "添加信息";
+            this.toolStripButton1.Click += new System.EventHandler(this.添加教师信息_Click);
             // 
             // toolStripButton2
             // 
@@ -148,6 +155,7 @@
             this.toolStripButton2.Size = new System.Drawing.Size(34, 28);
             this.toolStripButton2.Text = "toolStripButton2";
             this.toolStripButton2.ToolTipText = "删除信息";
+            this.toolStripButton2.Click += new System.EventHandler(this.删除教师信息_Click);
             // 
             // toolStripButton3
             // 
@@ -158,6 +166,17 @@
             this.toolStripButton3.Size = new System.Drawing.Size(34, 28);
             this.toolStripButton3.Text = "toolStripButton3";
             this.toolStripButton3.ToolTipText = "修改信息";
+            this.toolStripButton3.Click += new System.EventHandler(this.修改教师信息_Click);
+            // 
+            // 刷新
+            // 
+            this.刷新.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.刷新.Image = global::demo.Properties.Resources.crazing_42_b_m;
+            this.刷新.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.刷新.Name = "刷新";
+            this.刷新.Size = new System.Drawing.Size(34, 28);
+            this.刷新.Text = "刷新";
+            this.刷新.Click += new System.EventHandler(this.刷新_Click);
             // 
             // statusStrip1
             // 
@@ -204,6 +223,10 @@
             // 
             // dataGridView1
             // 
+            this.dataGridView1.AllowUserToAddRows = false;
+            this.dataGridView1.AllowUserToDeleteRows = false;
+            this.dataGridView1.AllowUserToResizeColumns = false;
+            this.dataGridView1.AllowUserToResizeRows = false;
             this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
@@ -238,8 +261,10 @@
             dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
             this.dataGridView1.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
+            this.dataGridView1.RowHeadersVisible = false;
             this.dataGridView1.RowHeadersWidth = 62;
             this.dataGridView1.RowTemplate.Height = 30;
+            this.dataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dataGridView1.Size = new System.Drawing.Size(827, 452);
             this.dataGridView1.TabIndex = 8;
             // 
@@ -279,6 +304,7 @@
             this.Name = "Form4";
             this.Text = "管理页面";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.Form4_FormClosed);
+            this.Load += new System.EventHandler(this.Form4_Load);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.toolStrip1.ResumeLayout(false);
@@ -297,9 +323,9 @@
         private System.Windows.Forms.ToolStripMenuItem 系统ToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem 退出ToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem 信息管理ToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem 添加学生信息ToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem 修改学生信息ToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem 删除学生信息ToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem 添加教师信息;
+        private System.Windows.Forms.ToolStripMenuItem 修改教师信息;
+        private System.Windows.Forms.ToolStripMenuItem 删除教师信息;
         private System.Windows.Forms.ToolStrip toolStrip1;
         private System.Windows.Forms.ToolStripButton toolStripButton1;
         private System.Windows.Forms.ToolStripButton toolStripButton2;
@@ -315,5 +341,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column4;
+        private System.Windows.Forms.ToolStripButton 刷新;
     }
 }
