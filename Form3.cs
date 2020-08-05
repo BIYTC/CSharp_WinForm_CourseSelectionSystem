@@ -91,7 +91,7 @@ namespace demo
         private void 我的课程ToolStripMenuItem_Click(object sender, EventArgs e)
         {
             Form31 f = new Form31(SID);
-            f.Show();
+            f.ShowDialog();
         }
 
         private void 退出ToolStripMenuItem_Click(object sender, EventArgs e)

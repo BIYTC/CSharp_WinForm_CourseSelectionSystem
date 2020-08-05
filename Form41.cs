@@ -85,10 +85,11 @@ namespace demo
                 if (dao.AppendData(sql) && dao.AppendData(sql1))
                 {
                     MessageBox.Show("修改成功！");
-                    textBox1.Text = null;
-                    textBox2.Text = null;
-                    textBox3.Text = null;
-                    textBox4.Text = null;
+                    //textBox1.Text = null;
+                    //textBox2.Text = null;
+                    //textBox3.Text = null;
+                    //textBox4.Text = null;
+                    Close();
                 }
                 else
                 {

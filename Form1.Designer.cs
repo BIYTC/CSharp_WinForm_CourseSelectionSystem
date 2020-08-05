@@ -74,7 +74,7 @@
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Image = global::demo.Properties.Resources._20200219191239;
+            this.pictureBox1.Image = global::demo.Properties.Resources.彦祖;
             this.pictureBox1.Location = new System.Drawing.Point(77, 52);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(196, 272);

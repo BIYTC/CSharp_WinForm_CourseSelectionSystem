@@ -63,9 +63,9 @@ namespace demo.Properties {
         /// <summary>
         ///   查找 System.Drawing.Bitmap 类型的本地化资源。
         /// </summary>
-        internal static System.Drawing.Bitmap _20200219191239 {
+        internal static System.Drawing.Bitmap 减号 {
             get {
-                object obj = ResourceManager.GetObject("20200219191239", resourceCulture);
+                object obj = ResourceManager.GetObject("减号", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -73,9 +73,9 @@ namespace demo.Properties {
         /// <summary>
         ///   查找 System.Drawing.Bitmap 类型的本地化资源。
         /// </summary>
-        internal static System.Drawing.Bitmap crazing_41 {
+        internal static System.Drawing.Bitmap 刷新 {
             get {
-                object obj = ResourceManager.GetObject("crazing_41", resourceCulture);
+                object obj = ResourceManager.GetObject("刷新", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -83,9 +83,9 @@ namespace demo.Properties {
         /// <summary>
         ///   查找 System.Drawing.Bitmap 类型的本地化资源。
         /// </summary>
-        internal static System.Drawing.Bitmap crazing_41_b_m {
+        internal static System.Drawing.Bitmap 加号 {
             get {
-                object obj = ResourceManager.GetObject("crazing_41_b_m", resourceCulture);
+                object obj = ResourceManager.GetObject("加号", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -93,69 +93,9 @@ namespace demo.Properties {
         /// <summary>
         ///   查找 System.Drawing.Bitmap 类型的本地化资源。
         /// </summary>
-        internal static System.Drawing.Bitmap crazing_41_b_m_r {
+        internal static System.Drawing.Bitmap 彦祖 {
             get {
-                object obj = ResourceManager.GetObject("crazing_41_b_m_r", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   查找 System.Drawing.Bitmap 类型的本地化资源。
-        /// </summary>
-        internal static System.Drawing.Bitmap crazing_41_r {
-            get {
-                object obj = ResourceManager.GetObject("crazing_41_r", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   查找 System.Drawing.Bitmap 类型的本地化资源。
-        /// </summary>
-        internal static System.Drawing.Bitmap crazing_42 {
-            get {
-                object obj = ResourceManager.GetObject("crazing_42", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   查找 System.Drawing.Bitmap 类型的本地化资源。
-        /// </summary>
-        internal static System.Drawing.Bitmap crazing_42_b_m {
-            get {
-                object obj = ResourceManager.GetObject("crazing_42_b_m", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   查找 System.Drawing.Bitmap 类型的本地化资源。
-        /// </summary>
-        internal static System.Drawing.Bitmap crazing_42_m_r {
-            get {
-                object obj = ResourceManager.GetObject("crazing_42_m_r", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   查找 System.Drawing.Bitmap 类型的本地化资源。
-        /// </summary>
-        internal static System.Drawing.Bitmap crazing_42_r {
-            get {
-                object obj = ResourceManager.GetObject("crazing_42_r", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   查找 System.Drawing.Bitmap 类型的本地化资源。
-        /// </summary>
-        internal static System.Drawing.Bitmap crazing_43 {
-            get {
-                object obj = ResourceManager.GetObject("crazing_43", resourceCulture);
+                object obj = ResourceManager.GetObject("彦祖", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

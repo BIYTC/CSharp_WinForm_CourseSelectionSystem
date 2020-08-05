@@ -175,5 +175,17 @@
   <ItemGroup>
     <None Include="Resources\20200219191239.jpg" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\加号.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\减号.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\刷新.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\彦祖.jpg" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
