@@ -98,5 +98,12 @@ namespace demo
         {
             Application.Exit();
         }
+
+        private void 修改密码ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Form32 f = new Form32(SID);
+            f.ShowDialog();
+
+        }
     }
 }

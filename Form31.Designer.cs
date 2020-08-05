@@ -47,14 +47,14 @@
             this.取消这门课ToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(800, 32);
+            this.menuStrip1.Size = new System.Drawing.Size(800, 36);
             this.menuStrip1.TabIndex = 1;
             this.menuStrip1.Text = "menuStrip1";
             // 
             // 取消这门课ToolStripMenuItem
             // 
             this.取消这门课ToolStripMenuItem.Name = "取消这门课ToolStripMenuItem";
-            this.取消这门课ToolStripMenuItem.Size = new System.Drawing.Size(116, 28);
+            this.取消这门课ToolStripMenuItem.Size = new System.Drawing.Size(116, 30);
             this.取消这门课ToolStripMenuItem.Text = "取消这门课";
             this.取消这门课ToolStripMenuItem.Click += new System.EventHandler(this.取消这门课ToolStripMenuItem_Click);
             // 
@@ -73,14 +73,14 @@
             this.Column3,
             this.Column4});
             this.dataGridView1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dataGridView1.Location = new System.Drawing.Point(0, 32);
+            this.dataGridView1.Location = new System.Drawing.Point(0, 36);
             this.dataGridView1.MultiSelect = false;
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersVisible = false;
             this.dataGridView1.RowHeadersWidth = 62;
             this.dataGridView1.RowTemplate.Height = 30;
             this.dataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dataGridView1.Size = new System.Drawing.Size(800, 418);
+            this.dataGridView1.Size = new System.Drawing.Size(800, 414);
             this.dataGridView1.TabIndex = 4;
             // 
             // Column1
