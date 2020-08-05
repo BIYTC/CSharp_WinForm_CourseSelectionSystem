@@ -7,9 +7,10 @@ B站教学链接：https://www.bilibili.com/video/BV1zJ411k7cQ/?p=1
 示例:  
 string sql1 = string.Format("select * from 选课记录表 where SID='{0}' and CID='{1}'", SID, CID);  
 string sql = $"select * from 选课记录表 where SID='{SID}'";  
-3、里面使用的图标、图片没有精心挑选，都是电脑里现有的图片，图片文件均位于Resources文件夹内  
+3、使用的图标、图片均位于Resources文件夹内  
 ##  更新记录
 2020.8.3，更新到第7讲选课部分  
 2020.8.4，更新到第9讲，完成选课与删除已选课程功能  
 2020.8.4，更新到第10讲，完成管理员修改教师信息功能  
-2020.8.5，更新到第11讲，完成密码修改功能
+2020.8.5，更新到第11讲，完成密码修改功能  
+2020.8.5，更新图标与部分交互逻辑 
